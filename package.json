@@ -1,6 +1,6 @@
 {
   "name": "surplus-mixin-onkey",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Attach handlers to key presses in Surplus applications",
   "main": "index.js",
   "module": "index.es.js",
@@ -12,7 +12,7 @@
   "author": "Adam Haile",
   "license": "MIT",
   "dependencies": {
-      "surplus": "../../surplus/packages/Surplus"
+      "surplus": "^0.4.3"
   },
   "devDependencies": {
     "jasmine": "^2.6.0",
