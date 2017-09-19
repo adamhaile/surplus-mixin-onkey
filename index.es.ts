@@ -1,8 +1,8 @@
 import { S } from 'surplus';
 
-export default function onkey(key : string, arg1 : EventListener | string, arg2? : EventListener) {
+export default function onkey(key : string, arg1 : ((e : KeyboardEvent) => void) | string, arg2? : (e : KeyboardEvent) => void) {
     const event = arguments.length < 3 ? 'keydown' : 'key' + arg1,
-        fn = arguments.length < 3 ? arg1 as EventListener : arg2!;
+        fn = arguments.length < 3 ? arg1 as (e : KeyboardEvent) => void : arg2!;
 
     var parts = key.toLowerCase().split('-', 2),
         keyCode = keyCodes[parts[parts.length - 1]],

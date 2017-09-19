@@ -1,7 +1,7 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('surplus')) :
 	typeof define === 'function' && define.amd ? define(['exports', 'surplus'], factory) :
-	(factory((global.SurplusDataMixin = global.SurplusDataMixin || {}),global.Surplus));
+	(factory((global.SurplusDataMixin = {}),global.Surplus));
 }(this, (function (exports,surplus) { 'use strict';
 
 function onkey(key, arg1, arg2) {
